@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoli Kodifikasi</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+        body {
+            font-family: 'MedievalSharp', cursive;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e1f29, #403f4c);
+            color: #f4e1d2;
+            overflow-x: hidden;
+        }
+        header {
+            background: radial-gradient(circle, #6b54a0, #35254b);
+            color: #f4e1d2;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px #000;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #35254b;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            color: #f4e1d2;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #cbb6e0;
+        }
+        .hero {
+            background: url('web%20pjd/bg.png') no-repeat center center/cover;
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 3rem;
+        }
+        .glow {
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #6b54a0, 0 0 30px #6b54a0;
+            }
+            100% {
+                text-shadow: 0 0 20px #fff, 0 0 40px #6b54a0, 0 0 60px #6b54a0;
+            }
+        }
+        section {
+            padding: 2rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #2b2c38;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .team-member {
+            background-color: #403f4c;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, background-color 0.3s;
+        
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+            background-color: #6b54a0;
+        }
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        ul li, ol li {
+            margin: 0.5rem 0;
+        }
+        footer {
+            background-color: #35254b;
+            color: #f4e1d2;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+        }
+        footer::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 5px;
+            background: linear-gradient(90deg, #6b54a0, transparent);
+            margin: 1rem auto 0;
+        }
+        .highlight {
+            background: #503868;
+            border-left: 5px solid #6b54a0;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            color: #f4e1d2;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="glow">Introducing</h1>
+        <div class="Judul" style="text-align: center; margin: 20px;">
+            <img src="web%20pjd/stiker%20pjd.png" alt="Judul" 
+                style="width: 600px; height: auto;">
+            <p style="color: #f8f8f8; font-size: 18px; margin-top: 10px;">Monopoli Kodifikasi</p>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="#kata-pembuka">Kata Pembuka</a>
+        <a href="#Pesan Kami">Pesan Kami</a>
+        <a href="#tim">Tim Kami</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#keunggulan">Kelebihan</a>
+        <a href="#langkah">Langkah Bermain</a>
+        <a href="#peraturan">Peraturan Bermain</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Selamat Datang di Dunia Magic Monopoli Kodifikasi</h2>
+        <p>Belajar sambil bermain dengan suasana penuh keajaiban!</p>
+    </section>
+
+    <section id="kata-pembuka">
+        <div class="container">
+            <h2>Kata Pembuka</h2>
+            <p>Selamat datang di website edukasi mengenai Monopoli Kodifikasi. Website ini bertujuan untuk memberikan informasi dan panduan tentang permainan edukatif yang kami kembangkan.</p>
+        </div>
+    </section>
+
+    <section id="Pesan Kami">
+        <div class="container">
+            <h2>Pesan Kami</h2>
+            <div class="highlight">
+                <p>"Belajar tak selalu membosankan, dan bermain tak hanya "Belajar tak selalu membosankan, dan bermain tak hanya
+                    untuk bersenang-senang. Dengan Monopoli Kodifikasi, untuk bersenang-senang. Dengan Monopoli Kodifikasi,
+                    mari ciptakan cara baru untuk tumbuh, berpikir, dan mari ciptakan cara baru untuk tumbuh, berpikir, dan
+                    berkreasi!" berkreasi!</p>
+                    <div class="highlight">
+                        <p>"Monopoli Kodifikasi hadir untuk menghidupkan filosofi
+                            ini, membawa pembelajaran ke tingkat yang lebih ini, membawa pembelajaran ke tingkat yang lebih
+                            menyenangkan dan bermakna</p>
+            </div>
+           
+
+    <section id="tim">
+        <div class="container">
+            <h2>Tim Kami</h2>
+            <div class="team">
+                <div class="team-member" style="text-align: center; margin: 20px;">
+                    <img src="web%20pjd/1.png" alt="M.V Dhea Puspita Sari" 
+                        style="width: 150px; height: auto; border: 3px solid #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <p style="color: #f8f8f8; font-size: 18px; margin-top: 10px;">M.V. Dhea Puspita Sari</p>
+                    <p style="color: #f8f8f8; font-size: 16px; margin-top: 10px;">As a Codification Content Creator</p>
+                </div>
+            </div>
+            <div class="team">
+                <div class="team-member" style="text-align: center; margin: 20px;">
+                    <img src="web%20pjd/3.png" alt="Zalea Tirta Ayundya" 
+                        style="width: 150px; height: auto; border: 3px solid #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <p style="color: #f8f8f8; font-size: 18px; margin-top: 10px;">Zalea Tirta Ayundya</p>
+                    <p style="color: #f8f8f8; font-size: 16px; margin-top: 10px;">As a Codification Content Creator</p>
+                </div>
+            </div>
+            
+            <div class="team">
+                <div class="team-member" style="text-align: center; margin: 20px;">
+                    <img src="web%20pjd/5.png" alt="Syva Anasya Putri" 
+                        style="width: 150px; height: auto; border: 3px solid #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <p style="color: #f8f8f8; font-size: 18px; margin-top: 10px;">Syva Anasya Putri</p>
+                    <p style="color: #f8f8f8; font-size: 16px; margin-top: 10px;">As a Board Concept Designer</p>
+                </div>
+            </div>
+            
+            <div class="team">
+                <div class="team-member" style="text-align: center; margin: 20px;">
+                    <img src="web%20pjd/2.png" alt="Farah Dwi Anjani" 
+                        style="width: 150px; height: auto; border: 3px solid #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <p style="color: #f8f8f8; font-size: 18px; margin-top: 10px;">Farah Dwi Anjani</p>
+                    <p style="color: #f8f8f8; font-size: 16px; margin-top: 10px;">As a Digital Editor and Web Creator</p>
+                </div>
+            </div>
+            
+            <div class="team">
+                <div class="team-member" style="text-align: center; margin: 20px;">
+                    <img src="web%20pjd/4.png" alt="Alifia Nirbita Nuraini" 
+                        style="width: 150px; height: auto; border: 3px solid #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <p style="color: #f8f8f8; font-size: 18px; margin-top: 10px;">Alifia Nirbita Nuraini</p>
+                    <p style="color: #f8f8f8; font-size: 16px; margin-top: 10px;">As a Documentation Creator</p>
+                </div>
+            </div>
+            
+            <div class="team">
+                <div class="team-member" style="text-align: center; margin: 20px;">
+                    <img src="web%20pjd/6.png" alt="Shafa Danella Apta Sani" 
+                        style="width: 150px; height: auto; border: 3px solid #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <p style="color: #f8f8f8; font-size: 18px; margin-top: 10px;">Shafa Danella Apta Sani</p>
+                    <p style="color: #f8f8f8; font-size: 16px; margin-top: 10px;">As a Game Rule Maker</p>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang">
+        <div class="container">
+            <h2>Apa itu Monopoli Kodifikasi?</h2>
+            <div class="highlight">
+                <p>Monopoli Kodifikasi adalah permainan edukatif yang menggabungkan konsep monopoli dengan ilmu kodifikasi muskuloskeletal. Permainan ini dirancang untuk memudahkan pembelajaran dalam suasana yang menyenangkan.</p>
+            </div>
+            <h3>Tujuan</h3>
+            <p>Memfasilitasi pembelajaran kodifikasi melalui pendekatan yang interaktif dan menarik.</p>
+
+            <h3>Manfaat</h3>
+            <ul>
+                <li>Meningkatkan pemahaman konsep kodifikasi.</li>
+                <li>Mengasah kemampuan analitis.</li>
+                <li>Mempererat kerja sama tim.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="keunggulan">
+        <div class="container">
+            <h2>Kelebihan dari Monopoli Kodifikasi</h2>
+            <ul>
+                <li>Desain permainan yang inovatif.</li>
+                <li>Cocok untuk semua kalangan.</li>
+                <li>Dapat diintegrasikan dalam kurikulum pendidikan.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="langkah">
+        <div class="container">
+            <h2>Langkah Bermain</h2>
+            <ol>
+                <li>Pemain melempar dadu yang telah disediakan.</li>
+                <li>Setelah pion maju sesuai jumlah dadu yang didapat, maka pemain
+                    mengambil kartu kasus yang ada pada papan permainan.</li>
+                <li>Pemain mengidentifikasi poli yang akan dituju dari kartu
+                    kasus yang didapatkan.</li>
+                <li> Pemain mengidentifikasi penyakit tersebut di buku notes yang sudah
+                    disediakan dengan menuliskan leadtermnya.</li>
+                <li> Pemain melakukan scan pada barcode yang ada pada papan untuk melihat ICD
+                    10 Vol. 3 dilanjutkan ICD Vol. 1 untuk dapat menyusun kode penyakit di tengah
+                    papan monopoli sebanyak 4-5 karakter tergantung penyakit yang didapat.</li>
+                <li>Pemain mendapat kartu kunci yang berisikan jawaban dari kasus
+                    yang diapat.</li>
+                <li> Jika semua pemain telah selesai bermain dan jawaban dari
+                    pemain itu benar maka peserta akan mendapat poin.</li>
+                <li>Jika pemain melakukan kesalahan lebih dari tiga kali, maka peserta
+                    akan masuk ke ruangan isolasi mandiri sebagai pengganti penjara
+                    dan tidak boleh bermain selama 2 kali putaran.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="peraturan">
+        <div class="container">
+            <h2>Peraturan Bermain</h2>
+            <ol>
+                <li>Setiap pemain mendapat tiga nyawa pada setiap kasus, jika saat
+                    menjawab satu kasus pemain melakukan kesalahan pada saat
+                    menjawab, poin akan berkurang satu.</li>
+                <li>Jika dalam menjawab satu kasus pemain menghabiskan ketiga
+                    nyawanya, maka pemain tersebut akan masuk ke penjara.</li>
+                <li>Pemain dibekukan dan tidak mendapat giliran saat bermain
+                    sampai dua kali putaran.</li>
+                <li> Pemain dibekukan dan tidak mendapat giliran saat bermain
+                    sampai dua kali putaran.</li>
+                <li> Pemain dikatakan memenangkan permainan jika sudah
+                    mendapat 10 poin atau menyelesaikan 10 kasus.</li>
+            <ol>
+        </div>
+    </section>
+
+    <section id="Pesan Kami">
+        <div class="container">
+            <h2>Pesan Kami</h2>
+            <ol>
+                <p>"Belajar tak selalu membosankan, dan bermain tak hanya "Belajar tak selalu membosankan, dan bermain tak hanya
+                    untuk bersenang-senang. Dengan Monopoli Kodifikasi, untuk bersenang-senang. Dengan Monopoli Kodifikasi,
+                    mari ciptakan cara baru untuk tumbuh, berpikir, dan mari ciptakan cara baru untuk tumbuh, berpikir, dan
+                    berkreasi!" berkreasi!"
+                    Monopoli Kodifikasi hadir untuk menghidupkan filosofi Monopoli Kodifikasi hadir untuk menghidupkan filosofi
+                    ini, membawa pembelajaran ke tingkat yang lebih ini, membawa pembelajaran ke tingkat yang lebih
+                    menyenangkan dan bermakna!.</p>
+                <ol>
+                </div>
+            </section>
+
+    <footer>
+        <p>&copy; 2024 Monopoli Kodifikasi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
